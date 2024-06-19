@@ -8,7 +8,11 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
+# Add title and names
 st.title('Financial Analysis Web App')
+st.write("**Created by:**")
+st.write("**Hadid Pilar Gautama**")
+st.write("**Raden Ananta Mahardika**")
 
 # Download stock data
 st.sidebar.header('Stock Data')
