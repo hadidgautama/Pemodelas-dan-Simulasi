@@ -16,7 +16,7 @@ ticker = st.sidebar.text_input('Enter Stock Ticker', 'GOTO.JK')
 start_date = st.sidebar.date_input('Start Date', pd.to_datetime('2022-01-01'))
 end_date = st.sidebar.date_input('End Date', pd.to_datetime('2023-12-31'))
 
-data = yf.download(ticker, start=start_date, end=end_date)
+data = yf.download(ticker, start=start_date, end=end_date, progress=False)
 
 # Display the raw data
 st.subheader('Raw Data')
